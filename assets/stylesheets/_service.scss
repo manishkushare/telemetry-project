@@ -1,0 +1,97 @@
+.service-options {
+    padding: 4rem 0;
+    .service-btn {
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .consequatDiv,
+    .feugiatDiv {
+        display: none;
+    }
+}
+
+// custom buttons 
+.custom-aliquam,
+.custom-consequat,
+.custom-feugiat {
+    padding-top: 2rem;
+    color: $white;
+    
+}
+
+.service-content {
+    border: 1px solid $child-p;
+    padding: 4rem 4rem;
+    .service-col1,
+    .service-col2 {
+        width: 50%;
+    }
+    .service-col2 img {
+        width: 100%;
+    }
+}
+
+.service-col1 {
+    padding-right: 2rem;
+    h3 {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    p {
+        padding: 3rem 0 2rem 0;
+        line-height: 1.5;
+        color: #929292;
+    }
+    .btn {
+        border: 1px solid black;
+        padding: 1rem 2rem;
+    }
+    
+}
+
+// responsive 
+
+@media screen and (max-width: 768px) {
+    .service {
+        margin: 0 2rem;
+    }
+
+    .service-options {
+        .service-btn {
+            padding: 0.5rem 0.991rem;
+        }
+        .flex {
+            flex-direction: column;
+        }
+    }
+
+    .service-content {
+        padding: 2rem;
+        .service-col1,
+        .service-col2{
+            width: 100%;
+        }
+        .service-col2 {
+            img {
+                width: 100%;
+            }
+        }
+        .service-col1 {
+            order: 1;
+            h3 {
+                margin-top: 2rem;
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 0.8rem;
+                padding: 2rem 0 1.5rem 0;
+            }
+            .btn {
+                width: 100%;
+            }
+
+        }
+    }
+}

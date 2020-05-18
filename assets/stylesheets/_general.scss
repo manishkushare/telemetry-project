@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn {
+    background: transparent;
+    padding: 1rem 4rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    &:hover {
+        background-color: rgba(207, 207, 207 ,0.1);
+    }
+}
+
+.dot {
+    margin-top: 5rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $white;
+
+}

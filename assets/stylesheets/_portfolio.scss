@@ -1,0 +1,73 @@
+.portfolio-col1 {
+    background:linear-gradient(rgba(#000000,0.7),rgba(#000000,0.7)), url("https://pixelarity.com/items/demos/telemetry/orange/images/pic03.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 50%;
+
+}
+.portfolio-col2 {
+    background: linear-gradient(rgba(#000000,0.7),rgba(#000000,0.7)),url("https://pixelarity.com/items/demos/telemetry/orange/images/pic04.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 50%;
+}
+.portfolio-col1,
+.portfolio-col2 {
+    .flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.portfolio-content {
+    .dot {
+        background-color: $primary;
+        
+    }
+    .fa-quote-left {
+        color: #FCE0DE;
+        font-size: 2rem;
+       
+    }
+}
+.portfolio-content {
+    padding: 2rem;
+
+    h2 {
+        color: $white;
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    h3 {
+        color: $primary;
+        padding: 1rem 0;
+    }
+    p {
+        color: #FCE0DE;
+    }
+}
+
+// responsive
+@media screen and (max-width: 768px) {
+    .portfolio {
+        .flex {
+            flex-direction: column;
+        }
+    }
+
+    .portfolio-col1,
+    .portfolio-col2 {
+        width: 100%;
+    }
+
+    .portfolio-content {
+        h2 {
+            font-size: 1.3rem;
+            line-height: 1.5;
+        }
+    }
+}

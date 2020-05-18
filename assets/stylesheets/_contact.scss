@@ -1,0 +1,176 @@
+// contact background color
+.contact {
+    background-color: $primary;
+    padding: 4rem 0;
+    .contact-col1 {
+        width: 30%;
+    }
+    .contact-col2 {
+        width: 70%;
+    }
+}
+// contact column 1 content
+.contact-col1 {
+    
+    .flex {
+        justify-content: flex-start;
+    }
+    a{
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.contact-col1 {
+    h2 {
+        color: $white;
+        font-size: 2rem;
+    }
+        font-weight: 300;
+    }
+    .fa-home,
+    .fa-phone-alt,
+    .fa-envelope {
+        color: $white;
+}
+
+
+.contact-col1 {
+    .address {
+        padding-top: 2rem ;
+    }
+    .phone {
+        padding: 2rem 0;
+    }
+    .envelope {
+        padding-bottom: 2rem ;
+    }
+}
+.contact-logo {
+    // padding-right: 2rem;
+    font-size: 2rem;
+    
+    .fa-facebook-square {
+        background-color: transparent;
+    }
+    a {
+        margin-right:1rem;
+        border: 1px solid $white;
+        font-size: 1.5rem;
+        background-color: transparent;
+        padding: 0.3rem 0.5rem;
+        border-radius: 0.2rem;
+
+    }
+}
+    
+.address address,
+.phone a,
+.envelope a {
+    padding-left: 1rem;
+}   
+    
+// forms
+.form-head {
+    color: $white;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.form-content {
+    margin: 2rem 0;
+    .flex {
+        justify-content: flex-start;
+    }
+}
+.form-head {
+    padding-bottom: 1rem;
+}
+.text-area {
+    width: 100%;
+    margin-top: 1.5rem;
+    background-color: transparent;
+    border: 1px solid #F7A49C;
+    padding: 1rem 0 1rem 0.5rem;
+    outline: 0;
+    &:focus {
+        border: 1px solid $white;
+        border-width: 0.1rem;   
+    }
+}
+.form-text,
+.form-email {
+    width: 50%;
+    background-color: transparent;
+    border: 1px solid #F7A49C;
+    padding: 1rem 0 1rem 0.5rem;
+    outline: 0;
+    &:focus {
+        border: 1px solid $white;
+        border-width: 0.1rem;
+    }
+    ::placeholder {
+        color: #F8B5AF;
+    } 
+    
+}
+.form-text {
+    margin-right: 2rem;
+}
+.form-content {
+    .btn {
+        padding: 1rem 3rem;
+        border: 1px solid $white;
+        color: $white;
+        margin: 1rem 0;
+    }
+}
+
+
+// responsive
+@media screen and (max-width:768px) {
+    .contact {
+        
+        .flex {
+            flex-direction: column;
+        }
+        .container {
+            padding: 0 2rem;
+        }
+        .contact-col1 {
+            width: 70%;
+            margin: 4rem 0;
+        }
+        .contact-col2 {
+            width: 100%;
+        }
+        .btn {
+            width: 100%;
+        }
+    }
+
+    .contact {
+        .form-content {
+            .form-text,
+            .form-email {
+                width: 100%;
+            } 
+            .form-text{
+                margin-bottom: 2rem;
+            }
+            
+        }
+    }
+    
+
+    .contact-col1 {
+        .flex {
+            flex-direction: row;
+        }
+        .address {
+            width: 100%;
+            
+        }
+    }
+    
+}

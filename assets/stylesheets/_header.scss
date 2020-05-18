@@ -1,0 +1,146 @@
+
+.flex {
+    justify-content: space-between;
+    
+    
+}
+// logo part
+.header-brand{
+    li {
+        display: inline-block;
+    }
+    .brand-name {
+        border-left: 1px solid $white;
+        padding-left: 1rem;
+    }
+    .brand-logo {
+        padding-right: 1rem;
+        font-size: 1.5rem;
+    }
+}
+// menu list flex
+
+.list-items {
+    // padding-left: 1.5rem;
+    margin-left: 1.5rem;
+}
+.active {
+    border-bottom: 1.5px solid tomato;
+    
+}
+
+// header 
+.header {
+    padding: 2rem 0;
+    // background-color: yellow;
+    color: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    a {
+        text-decoration: none;
+        color: $white;
+        &:hover {
+            border-bottom: 1.5px solid tomato;
+        }
+    }
+}
+
+// dropdown
+#toggle {
+    display: none;
+}
+.bars {
+    display: none;
+}
+
+.menu-list li {
+    display: inline-block;
+    
+}
+.menu-list {
+    position: relative;
+}
+.sub-menu li {
+    display: block;
+}
+.sub-menu {
+    padding: 12px 32px;
+    text-align: center;
+}
+.sub-menu-box {
+    display: none;
+    position: absolute;
+    transform: translateX(-70%);
+    padding-top: 25px;
+}
+.nav-sub-menu:hover .sub-menu-box {
+    display: inline-block;
+}
+#toggle, .hamburger {
+    display: none;
+}
+
+// responsive 
+@media screen and (max-width: 768px) {
+    .menu-list {
+        display: none;
+    }
+    .header-brand {
+        margin: 0 2rem;
+        .brand-name {
+            display: none;
+        }
+        .brand-logo {
+            font-size: 1rem;
+        }
+    }
+    .menu-list {
+        display: none;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50px;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        background-color: rgba(1,26,41,0.9);
+        height: 100vh;
+        
+        li {
+            display: block;
+        }
+    }
+    
+    .hamburger {
+        font-size: 25px;
+        color: $white;
+        display: inline-block;
+        position: relative;
+        z-index: 999;
+        cursor: pointer;
+        padding-right: 2rem;
+    }
+    #toggle:checked ~ .menu-list {
+        display: block;
+        
+    }
+    // .sub-menu-box {
+    //     display: block;
+    //     transform: none;
+    //     position: relative;
+    //     padding: 0;
+    //     text-align: center;
+    // }
+    .sub-menu {
+        display: block;
+        position: relative;
+        transform: none;
+        background-color: rgba(81, 86, 88, 0.9);
+        font-size: 12px;
+        // right: 150px;
+    }
+
+}

@@ -1,0 +1,104 @@
+// width of columns
+
+.porgress-col1,
+.progress-col2 {
+    width: 50%;
+}
+// .progress {
+//     padding: 4rem 0;
+// }
+// column 1 structure
+.col1-content {
+    padding: 4rem 0;
+    img {
+        width: 100%;
+        margin: 4rem 0;
+    }
+    .btn {
+        
+        border: 1px solid black;
+        padding: 1rem 2rem;
+        margin: 4rem 0;
+    }
+}
+// column 1 custom style of each element
+.col1-content {
+    h2 {
+        
+        font-size: 1.5rem;
+        color: #363636;
+    }
+    p {
+        line-height: 1.5;
+        color: #5B5B5B;
+    }
+}
+
+// column 2 custom styles
+.progress-item {
+    padding-left: 2rem;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+  
+    width: 100%;
+    height: 2px;
+  }
+  progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+  }
+  progress[value]::-webkit-progress-value {
+    background-color: $primary;
+  }
+
+.progress-item {
+    margin: 4rem 0;
+    h2 {
+        color: #3B3B3B;
+    }
+    p {
+        color: $primary;
+        padding-top: 1rem;
+    }
+}
+
+// responsive
+@media screen and (max-width: 768px) {
+    .progress {
+        .flex {
+            flex-direction: column;
+        }
+        .container {
+            padding: 0 2rem;
+        }
+    }
+
+    .porgress-col1,
+    .progress-col2 {
+        width: 100%;
+    }
+
+    .col1-content {
+        padding: 4rem 0 0 0 !important;
+        h2 {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+        .btn {
+            width: 100%;
+            margin: 4rem 0 0 0 !important;
+        }
+    }
+
+    .progress-col2 {
+        .progress-item {
+            
+            padding-left: 0 !important ;
+        }
+    }
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- css file -->
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css ">
+
+
+
+</head>
+<body>
+    <!-- header -->
+
+    <header class="header">
+        <div class="container flex header-position">
+            <!-- logo -->
+            <ul class="header-brand">
+                <li class="brand-logo"><a href="#"><strong>Telemetry</strong></a></li>
+                <li class="brand-name">By Pixelarity</li>
+            </ul>
+
+            <!-- nav menu -->
+            <label for="toggle" class="hamburger" >&#9776;</label>
+            <input type="checkbox" id="toggle" class="toggle">
+            <nav class="menu-list flex">
+                <ul>
+                    <li class="list-items active"><a href="#">Home</a></li>
+                    <li class="list-items nav-sub-menu">
+                        <a class="down-icon" href="#"><i class="fas fa-chevron-down"></i>Dropdown</a>
+                        <div class="sub-menu-box">
+                            <ul class="sub-menu">
+                                <li><a href="#">Option one</a></li>
+                                <li><a href="#">Option two</a></li>
+                                <li><a href="#">Option three</a></li>
+                                <li><a href="#">submenu</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-items"><a href="#">Generic</a></li>
+                    <li class="list-items"><a href="#">Elements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+
+        <!-- hero -->
+
+        <section class="hero">
+            <article class="container hero-content">
+                <!-- hero content -->
+                <div class="flex">
+                    <span class="dot flex"><i class="fas fa-laptop"></i></span>
+                    <h1 class="hero-heading">Ipsum dolor sit amet feugiat et<br>veroeros adipiscing</h1>
+                    <hr> 
+                    <button class="btn hero-btn">get started</button>
+                </div>
+                </article>
+        </section>
+
+        <!-- primary -->
+
+        <section class="primary">
+            <div class="container flex">
+
+                <!-- primary col1  contains primary image-->
+
+                <article class="primary-col1">
+                    <img src="assets/media/pic02.jpg" alt="Boy standing near mountains">
+                </article>
+
+                <!-- primary col 2 contains primary context-->
+
+                <article class="primary-col2">
+
+                    <!-- primary heading -->
+
+                    <h2 class="primary-heading">Adipiscing ornare risus morbi est est blandi magna vel euismod tempus</h2>
+                    
+                    <!-- primary col2 subdivided into two columns -->
+
+                    <div class="primary-col2-list flex">
+
+                        <!-- first child of primary col2 list -->
+
+                        <div class="child flex">
+                                <span class="child-logo"><i class="far fa-gem"></i></span>
+                            <div class="child-description">
+                                <h3>Sed veroeros</h3>
+                                <p>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.</p>
+                            </div>
+                        </div>
+                        <!-- second child of subcol2 -->
+                        <div class="child flex">
+                                <span class="child-logo"><i class="far fa-file"></i></span>
+                            <div class="child-description">
+                                <h3>Magna etiam</h3>
+                                <p>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.</p>
+                            </div>
+                        </div>
+                    
+                        <!-- third child of subcol2 -->
+                        <div class="child flex">
+                            <div>
+                                <span class="child-logo"><i class="far fa-clone"></i></span>
+                            </div>
+                            <div class="child-description">
+                                <h3>Nulla consequat</h3>
+                                <p>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.</p>
+                            </div>                            
+                        </div>
+
+                        <!-- fourth child of subcol2 -->
+                        
+                        <div class="child flex">
+                            <div>
+                                <span class="child-logo"><i class="far fa-envelope"></i></span>
+                            </div>
+                            <div class="child-description">
+                                <h3>Euismod morbi</h3>
+                                <p>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>     
+        </section>
+        <!-- features sectiom -->
+        <section class="features">
+            <div class="container flex">
+                <!-- feature contents -->
+                <article class="feature-content">
+                    <h3>128</h3>
+                    <h4>Sed magna</h4>
+                    <p>Lorem ipsum dolor nulla feugiat adipiscing.</p>
+                </article>
+                <article class="feature-content">
+                    <h3>640</h3>
+                    <h4>Etiam dolor</h4>
+                    <p>Lorem ipsum dolor nulla feugiat adipiscing.</p>
+                </article>
+                <article class="feature-content">
+                    <h3>256</h3>
+                    <h4>Nullam amet</h4>
+                    <p>Lorem ipsum dolor nulla feugiat adipiscing.</p>
+                </article>
+                <article class="feature-content last-child">
+                    <h3>768</h3>
+                    <h4>Sit euismod</h4>
+                    <p>Lorem ipsum dolor nulla feugiat adipiscing.</p>    
+                </article>
+            </div>
+        </section>
+
+        <!-- services -->
+        <section class="service">
+            <div class="container">
+                <!-- service options provided in form of buttons -->
+                <article class="service-options">
+                    <button class="service-btn aliuamBtn custom-aliquam">Aliquam</button><!--------
+                    --><button class="service-btn consequatBtn">Consequat</button><!------
+                    --><button class="service-btn feugiatBtn">Feugiat</button>
+                    
+                    <!--service content  -->
+                    <!-- aliquam -->
+                    <div class="aliuamDiv">
+                        <div class="service-content flex">
+                            <div class="service-col1">
+                                <h3>Lorem ipsum dolor sit magna feugiat etiam sed dolor</h3>
+                                <p>Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
+                                <button class="btn">learn more</button>
+                            </div>
+                            <div class="service-col2">
+                                    <img src="assets/media/pic05.jpg" alt="human taking rest in garden">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- consequat -->
+                    <div class="consequatDiv">
+                        <div class="service-content flex">
+                            <div class="service-col1">
+                                <h3>Ipsum lorem accumsan sed nullam feugiat veroeros</h3>
+                                <p>Veritatis, accusantium, nemo. Officia neque explicabo nihil! Sunt vero reprehenderit, necessitatibus atque, enim autem animi illum quaerat at, corporis dolore ipsam. Voluptatem culpa sapiente sed veroeros.</p>
+                                <button class="btn">learn more</button>
+                            </div>
+                            <div class="service-col2">
+                                    <img src="assets/media/pic05.jpg" alt="human taking rest in garden">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- fegiat -->
+                    <div class="feugiatDiv">
+                        <div class="service-content flex">
+                            <div class="service-col1">
+                                <h3>Adipiscing sed impedit volutpat magna cursus lorem</h3>
+                                <p>Perspiciatis saepe, mollitia itaque magna etiam dolor sit amet. Sed rerum porro sint iure illo accusantium in amet totam, est. Ipsa nobis ad optio impedit quidem inventore libero, aperiam, nesciunt dolor sit amet.</p>
+                                <button class="btn">learn more</button>
+                            </div>
+                            <div class="service-col2">
+                                    <img src="assets/media/pic05.jpg" alt="human taking rest in garden">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- portfolio -->
+
+        <section class="portfolio">
+            <div class="flex">
+                <!-- portfolio column 1 -->
+                <div class="portfolio-col1">
+                    <div class="portfolio-content flex">
+                        <span class="dot flex"><i class="fas fa-quote-left"></i></span>
+                        <h2><q>Sed ultrices consequat dolor nulla fringilla dignissim</q></h2>
+                        <h3>Jane Doe</h3>
+                        <p>Ipsum dolor nullam</p>
+                    </div>
+                </div>
+                <!-- portfolio column 2 -->
+                <div class="portfolio-col2">
+                    <div class="portfolio-content flex">
+                        <span class="dot flex"><i class="fas fa-quote-left"></i></span>
+                        <h2><q>Sed ultrices consequat dolor nulla fringilla dignissim</q></h2>
+                        <h3>Jane Doe</h3>
+                        <p>Ipsum dolor nullam</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- progress -->
+
+        <section class="progress">
+            <div class="container flex">
+                <!-- progress column 1 -->
+                <article class="porgress-col1">
+                    <div class="col1-content">
+                        <h2>Feugiat lorem ipsum dolor velit amet dolor dignissim pharetra</h2>
+                        <img src="assets/media/pic06.jpg" alt="empty road">
+                        <p>Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
+                        <button class="btn">learn more</button>
+                    </div>
+                </article>
+                <!-- progress column 2 -->
+                <article class="progress-col2">
+                    <div class="progress-item">
+                        <h2>Ipsum amet</h2>
+                        <progress value="60" max="100"></progress>
+                        <p>60%</p>
+                    </div>
+                    <div class="progress-item">
+                        <h2>Adipiscing feugiat</h2>
+                        <progress value="90" max="100"></progress>
+                        <p>90%</p>
+                    </div>
+                    <div class="progress-item">
+                        <h2>Dolor ligula</h2>
+                        <progress value="75" max="100"></progress>
+                        <p>75%</p>
+                    </div>
+                      <div class="progress-item">
+                        <h2>Libero magna</h2>
+                        <progress value="45" max="100"></progress>
+                        <p>45%</p>
+                    </div>
+                    <div class="progress-item">
+                        <h2>Nec lacinia</h2>
+                        <progress value="55" max="100"></progress>
+                        <p>55%</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- contact-->
+        <section class="contact">
+            <div class="container flex">
+                <!-- contact column 1 -->
+                <article class="contact-col1">
+                    <h2>Contact</h2>
+                    <div class="address flex">
+                        <span><i class="fas fa-home"></i></span>
+                        <address><a href="#">1234 Fictional Street #5432 Nashville, TN 000000-0000</a></address>
+                    </div>
+                    <div class="phone flex">
+                        <span><i class="fas fa-phone-alt"></i></span>
+                        <a href="#">(000) 000-0000</a>
+                    </div>
+                    <div class="envelope flex">
+                        <span><i class="fas fa-envelope"></i></span>
+                        <a href="mailto:info@untitled.tld">info@untitled.tld</a>
+                    </div>
+                    <div class="contact-logo flex">
+                        <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                        <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+                        <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+                        <span><a href="#"><i class="fab fa-github"></i></a></span>
+                        <span><a href="#"><i class="fab fa-linkedin-in"></i></a></span>
+                    </div>
+                </article>
+
+                <!-- contact column 2 -->
+                <article class="contact-col2">
+                    <form>
+                        <legend class="form-head">Email Us</legend>
+                        <label class="form-content">
+                            <div class="flex">
+                                <input type="text" placeholder="Name" class="form-text">
+                                <input type="email" placeholder="Email" class="form-email"> 
+                            </div>
+                            
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="text-area"></textarea>
+                            <input type="submit" value="send message" class="btn">
+                        </label>
+                        
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <small class="small-text">&copy;Untitled. All rights are reserved.</small>
+        </div>
+    </footer>
+    
+    <!-- script -->
+    <script src="assets/test.js"></script>
+
+    
+</body>
+</html>

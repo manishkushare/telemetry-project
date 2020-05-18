@@ -1,0 +1,133 @@
+// primary section
+.primary {
+    padding: 4rem 0;
+    .flex {
+        justify-content: end;
+    }
+}
+// primary section column 1
+.primary-col1{
+    width: 30%;
+    img {
+        width: 100%;
+    }
+}
+
+// primary section column 2
+.primary-col2 {
+    width: 70%;
+    padding-left: 4rem;
+    // border: 1px solid black;
+    
+    .primary-heading {
+        font-size: 1.8rem;
+        color: $primary-header;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        
+}
+// primary section column 2 consisting list of four childrens
+.primary-col2-list {
+    
+    .child {
+        width: 50%;
+        flex-wrap: nowrap;
+        align-items:flex-start;
+        padding: 2rem 0;
+        &:nth-child(1) {
+            border-bottom: 1px solid $primary-section-border;
+            border-right: 1px solid $primary-section-border;
+        }
+        &:nth-child(2) {
+            border-bottom: 1px solid $primary-section-border;
+            padding-left: 2rem;
+        }
+        &:nth-child(3) {
+            border-right: 1px solid $primary-section-border;
+        }
+        &:nth-child(4) {
+            padding-left: 2rem;
+        }
+    }
+}
+
+// children description custom styles
+
+.child-description {
+    padding-left: 2rem;
+    p {
+        padding: 1rem 0;
+        line-height: 1.5;
+        color: $child-p;
+    }
+   
+    // color: $primary;
+}
+
+// child logo custom styles
+.child-logo {
+    color: $primary;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .primary {
+        .primary-col1 {
+            width: 100%;
+            order: 1;
+            padding: 0 2rem;
+            img {
+               width: 100%; 
+            }
+        }
+        .primary-col2 {
+            width: 100% ;
+            
+            padding: 0 2rem;
+            .primary-heading {
+                font-size: 1.5rem;
+                padding: 1.5rem 0;
+            }
+        }
+        .flex {
+         flex-direction: column;
+        }
+    }
+    .primary-col2-list  {
+       .child {
+         width: 100%;
+            &:nth-child(1),
+            &:nth-child(3) {
+                border-right: none;
+            }
+            &:nth-child(3) {
+                border-bottom: 1px solid $primary-section-border;
+            }
+        }
+
+    }
+    .primary-col2-list{
+        .child {
+            &:nth-child(2),
+            &:nth-child(4) {
+                padding-left: 0;
+            }
+            .child-description {
+                padding-left: 2rem;
+            }
+        }
+        .flex {
+            display: flex;
+            flex-direction: row;
+        }
+        
+
+        
+    }
+}
