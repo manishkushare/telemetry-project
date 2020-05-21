@@ -10,3 +10,8 @@
     text-align: center;
     padding: 2rem 0;
 }
+.form-text::placeholder,
+.form-email::placeholder,
+.text-area::placeholder {
+    color: $white;
+}

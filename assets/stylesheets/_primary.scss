@@ -18,13 +18,13 @@
     width: 70%;
     padding-left: 4rem;
     // border: 1px solid black;
-    
     .primary-heading {
         font-size: 1.8rem;
         color: $primary-header;
         font-weight: 300;
         line-height: 1.5;
     }
+    
     .flex {
         flex-direction: row;
         flex-wrap: wrap;
@@ -70,7 +70,7 @@
 }
 
 // child logo custom styles
-.child-logo {
+.child-logo{
     color: $primary;
     font-size: 1.5rem;
 }
@@ -78,6 +78,11 @@
 
 @media screen and (max-width: 768px) {
     .primary {
+        padding: 2rem 0 !important;
+        .container {
+            padding: 0 !important;
+        }
+
         .primary-col1 {
             width: 100%;
             order: 1;

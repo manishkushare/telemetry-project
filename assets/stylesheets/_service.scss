@@ -16,12 +16,25 @@
 .custom-consequat,
 .custom-feugiat {
     padding-top: 2rem;
-    color: $white;
+    // color: $white;
     
+}
+.aliuamBtn {
+    // background-color: transpaent;
+    color: $primary;
+    transform:  scaleY(1.3);
+    border: 1px solid #E3E3E3;
+    border-bottom: 0;
+    position: relative;
+    z-index: 55;
+    background-color: $white;
+    margin-bottom: -5px;
+    // border: 1px solid ;
+ 
 }
 
 .service-content {
-    border: 1px solid $child-p;
+    border: 1px solid #E3E3E3;
     padding: 4rem 4rem;
     .service-col1,
     .service-col2 {
@@ -39,9 +52,9 @@
         font-weight: 300;
         line-height: 1.5;
     }
+    line-height: 1.5;
     p {
         padding: 3rem 0 2rem 0;
-        line-height: 1.5;
         color: #929292;
     }
     .btn {
@@ -54,9 +67,7 @@
 // responsive 
 
 @media screen and (max-width: 768px) {
-    .service {
-        margin: 0 2rem;
-    }
+    
 
     .service-options {
         .service-btn {

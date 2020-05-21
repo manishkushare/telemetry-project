@@ -28,11 +28,6 @@ const barsCheckBox  = document.querySelector("#toggle");
 const formText = document.querySelector(".form-text");
 
 function displayAliquam(event) {
-    feugiatBtn.style.transform= "none";
-    feugiatBtn.style.backgroundColor ="#DDDDDD";
-    consequatBtn.style.transform= "none";
-    consequatBtn.style.backgroundColor ="#DDDDDD";
-
     consequatDiv.style.display = "none";
     feugiatDiv.style.display = "none";
     aliuamDiv.style.display = "block";
@@ -43,28 +38,11 @@ function displayAliquam(event) {
 
     feugiatBtn.style.backgroundColor= "#DDDDDD";
     feugiatBtn.style.color= "black"
-
-    aliuamBtn.style.outline = "0";
-    aliuamBtn.style.borderBottom = "0";
-    // aliuamBtn.style.paddingTop = "30px";
-    // feugiatBtn.style.paddingTop= "1rem";
-    // consequatBtn.style.paddingTop = "1rem";
-    aliuamBtn.style.transform= "scaleY(1.3)";
-    aliuamBtn.style.backgroundColor ="white";
-
-
-
-
     
     // aliuamBtn.style.backgroundColor = "white";
 
 }
 function displayConsequat(event) {
-    feugiatBtn.style.transform= "none";
-    feugiatBtn.style.backgroundColor ="#DDDDDD";
-    aliuamBtn.style.transform= "none";
-    aliuamBtn.style.backgroundColor ="#DDDDDD";
-
     consequatDiv.style.display = "block";
     feugiatDiv.style.display = "none";
     aliuamDiv.style.display = "none";
@@ -73,15 +51,7 @@ function displayConsequat(event) {
     consequatBtn.style.backgroundColor = "transparent";
     consequatBtn.style.color = "#F5867A";
     feugiatBtn.style.backgroundColor= "#DDDDDD";
-    feugiatBtn.style.color= "black";
-    consequatBtn.style.outline = "0";
-    consequatBtn.style.border = "1px solid #E3E3E3";
-    // consequatBtn.style.paddingTop = "30px";
-    // aliuamBtn.style.paddingTop = "1rem";
-    // feugiatBtn.style.paddingTop= "1rem"
-    consequatBtn.style.transform= "scaleY(1.3)";
-    consequatBtn.style.backgroundColor ="white";
-    consequatBtn.style.borderBottom = "0";
+    feugiatBtn.style.color= "black"
     
 
     // consequatBtn.style.backgroundColor = "white";
@@ -89,11 +59,6 @@ function displayConsequat(event) {
 
 }
 function displayFeugiat(event) {
-    consequatBtn.style.transform= "none";
-    consequatBtn.style.backgroundColor ="#DDDDDD";
-    aliuamBtn.style.transform= "none";
-    aliuamBtn.style.backgroundColor ="#DDDDDD";
-
     consequatDiv.style.display = "none";
     feugiatDiv.style.display = "block";
     aliuamDiv.style.display = "none";
@@ -104,17 +69,6 @@ function displayFeugiat(event) {
     feugiatBtn.style.backgroundColor= "transparent";
     feugiatBtn.style.color= "#F5867A"
     // feugiatBtn.style.backgroundColor = "white";
-    feugiatBtn.style.outline= "0";
-    // feugiatBtn.style.paddingTop= "30px"
-    // aliuamBtn.style.paddingTop = "1rem";
-    // consequatBtn.style.paddingTop = "1rem";
-    feugiatBtn.style.borderBottom = "0";
-    feugiatBtn.style.transform= "scaleY(1.3)";
-    feugiatBtn.style.backgroundColor ="white";
-    // feugiatBtn.style.paddingBottom= 
-    feugiatBtn.style.border = "1px solid #E3E3E3"
-    
-   
 
 }
 
